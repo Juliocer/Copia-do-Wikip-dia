@@ -2,25 +2,22 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #101418;
 }
 ul { list-style: none; padding-left: 5px; }
 .bar {
-    background-color: #f9f9fb;
+    background-color: #101418;
     padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
 }
 
 .content {
-    max-width: 1440px;
+    max-width: 1192px;
+    padding: 0.05px 44px 0px 44px;
     margin: auto;
-    grid-gap: 3rem;
     display: grid;
-    gap: 3rem;
+    gap: 1rem;
     grid-template-areas: "navegacao main section";
     grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 .footer {
     min-height: 100px;
@@ -38,15 +35,21 @@ figure {
 }
 
 header{
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
     max-width: 1280px;
     max-height: 66px;
     padding: 8px 44px 8px 44px;
 }
 
-header .header-logo-nav a{
+header .header-logo a{
+    display: flex;
     max-width: 50px;
     max-height: 180px;
-    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    color: #f9f9fb;
 }
 
 header a span{
@@ -55,12 +58,172 @@ header a span{
     align-items: center;
 }
 
-.header-logo-nav h1{
+.header-logo h1{
     font-size: 20px;
     margin: 0;
 }
 
-.header-logo-nav h2{
+.header-logo h2{
     font-size: 10px;
     margin: 0;
 }
+
+.content .navegacao{
+    max-width: 208px;
+    margin-top: 44px;
+}
+
+.cabecalho{
+    display: flex;
+    max-width: 164px;
+    max-height: 30px;
+    color: #f9f9fb;
+    border-bottom: solid 0.1px #72777d;
+}
+
+.cabecalho h2{
+    margin: 0px 8px 0px 0px;
+    color: #f8f9fa;
+    font-size: 15px;
+}
+
+.cabecalho button{
+    margin-bottom: 4px;
+    background-color: #404244;
+    border: 1px solid #404244;
+    border-radius: 4px;
+    color: #f9f9fb;
+}
+
+.navegacao .vector-toc-link{
+    text-decoration: none;
+}
+
+.navegacao .vector-toc-text{
+    max-width: 180px;
+    max-height: 16;
+    margin: 0;
+    font-size: 16px;
+    padding: 6px 0px 6px 0px;
+    color: #f8f9fa;
+}
+
+.content .section{
+    max-width: 196px;
+    margin-top: 44px;
+}
+
+.content .section .vector-container-rights{
+    margin-bottom: 32px;
+    padding: 0px 16px 0px 16px;
+}
+
+.content .section .cabeçalho-fixável-vetor{
+    padding-bottom: 6px;
+    display: flex;
+    border-bottom: 1px solid #72777d;
+}
+
+.content .section .cabeçalho-fixável-vetor h2{
+    margin: 0px 8px 0px 0px;
+    color: #f8f9fa;
+    font-size: 15px;
+}
+
+.content .section .cabeçalho-fixável-vetor button{
+    background-color: #404244;
+    border: 1px solid #404244;
+    border-radius: 4px;
+    color: #f8f9fa;
+    padding: 3px;
+}
+
+.content .section .vector-menu-rights h2{
+    color: #f8f9fa;
+    font-size: 15px;
+    border-bottom: 1px solid #72777d;
+    padding-bottom: 6px;
+    font-weight: normal;
+}
+
+.content .section .vector-menu-content .vector-menu-content-list{
+    margin: 0;
+    padding: 0;
+}
+
+.cdx-radio{
+    max-width: 216px;
+    max-height: 26px;
+    margin-bottom: 6px;
+}
+
+.content .section .vector-menu-rights label{
+    color: #f8f9fa;
+}
+
+.content .main .main-header{
+    padding: 0;
+    border-bottom: 1px solid #72777d;
+}
+
+.content .main .main-header h1{
+    margin: 0;
+    font-size: 25px;
+    color: #f8f9fa;
+    padding-bottom: 3px;
+}
+
+.main .main-navegacao{
+    border-bottom: 1px solid #72777d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .main-navegacao .left-navigation{
+    max-width: 365px;
+}
+
+.main .main-navegacao .left-navigation .vector-main-content ul{
+    display: flex;
+    margin: 0;
+    padding: 10px 0px 5px 0px;
+}
+
+.main .main-navegacao .left-navigation .vector-main-content ul li{
+    margin: 0px 8px 0px 0px;
+}
+
+.main .main-navegacao .left-navigation .left-link-nav{
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+.main .main-navegacao .right-navigation{
+    max-width: 302px;
+    max-height: 36px;
+    display: flex;
+}
+
+.main .main-navegacao .primeiro-nav-right{
+    max-width: 181px;
+}
+
+.main .main-navegacao .segundo-nav-right{
+    max-width: 120px;
+}
+
+.main .main-navegacao .right-navigation ul{
+    display: flex;
+    margin: 0;
+    padding: 10px 0px 5px 0px;
+}
+
+.main .main-navegacao .right-navigation ul li{
+    margin: 0px 10px 0px 0px;
+}
+
+.main .main-navegacao .right-navigation .right-link-nav{
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
